@@ -102,7 +102,7 @@ void APinActors::PointCalculator()
 
 
 			 
-			 //We do not include knocked down clubs in the previous round in scoring in this round. So set round return 0.
+			 //We do not include knocked down pins in the previous round in scoring in this round. So set round return 0.
 			 if (FallR1 == true && exemptFallR1 == true)
 			 {
 				 TheGameState->SetRoundPoint(0);
@@ -210,7 +210,7 @@ void APinActors::PointCalculator()
 			}
 
 
-			//We do not include knocked down clubs in the previous round in scoring in this round. So set round return 0.
+			//We do not include knocked down pins in the previous round in scoring in this round. So set round return 0.
 			if (FallR1 == true && exemptFallR1 == true)
 			{
 				TheGameState->SetRoundPoint(0);
@@ -272,7 +272,7 @@ void APinActors::PointCalculator()
 	}
 }
 
-//Point Exempt Creater. While calculating the points of newly fall pins in the second shots, the previous dropped clubs are exempted.
+//Point Exempt Creater. While calculating the points of newly fall pins in the second shots, the previous dropped pins are exempted.
 void APinActors::PointExemptDedecter()
 {
 	AFastBowlingGameState* TheGameState = Cast<AFastBowlingGameState>(UGameplayStatics::GetGameState(GetWorld()));
