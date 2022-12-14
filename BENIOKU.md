@@ -9,7 +9,7 @@ Bowling topu karakteridir. Temel ayarlar(seçilmiş top rengi gibi), girişler, 
 
 
 PinActors.cpp:
-Bowling labutlarıdır. Bünyesinde puan hesaplayıcı fonksiyon, takribi ikinci atışta, önceki atışta düşürülen kukaları hesaplamaya dahil etmeyen muaf tutucu fonksiyon, strike, spare bulucu fonksiyonları ve çarpışma ses efektlerini içerir. Kukaların düşüp düşmediği Unreal Engine Blueprint sistemi ile rotasyona bağlı olarak boolean anahtarına kaydedilerek hesaplanır. Puan hesaplayıcı bu anahtarlara göre çalışır.
+Bowling labutlarıdır. Bünyesinde puan hesaplayıcı fonksiyon, ikinci atışta önceki atışta düşürülen labutları hesaplamaya dahil etmeyen muaf tutucu fonksiyon, strike, spare bulucu fonksiyonları ve çarpışma ses efektlerini içerir. Kukaların düşüp düşmediği Unreal Engine Blueprint sistemi ile rotasyona bağlı olarak boolean anahtarına kaydedilerek hesaplanır. Puan hesaplayıcı bu anahtarlara göre çalışır.
 
 # Oyun İçi Kullanıcı Ara Yüzü
 
