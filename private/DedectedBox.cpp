@@ -6,7 +6,6 @@
 
 ADedectedBox::ADedectedBox()
 {
-	//Create Default Settings
 	TriggerVolume = CreateDefaultSubobject<UBoxComponent>(TEXT("Volume"));
 	TriggerVolume->OnComponentBeginOverlap.AddDynamic(this, &ADedectedBox::Beginoverlap);
 	TriggerVolume->SetupAttachment(RootComponent);
