@@ -2,7 +2,6 @@
 
 #include "AdMobSystem_RewardVideo.h"
 
-//Play Reward Video
 void UAdMobSystem::PlayRewardVideo()
 {
 #if PLATFORM_ANDROID
@@ -23,7 +22,6 @@ void UAdMobSystem::PlayRewardVideo()
 
 }
 
-//Load Reward Video Ad
 void UAdMobSystem::LoadRewardVideo()
 {
 #if PLATFORM_ANDROID
@@ -43,7 +41,6 @@ void UAdMobSystem::LoadRewardVideo()
 #endif
 }
 
-//Is Ready?
 bool UAdMobSystem::IsRewardVideoAvailable(bool Status)
 {
 #if PLATFORM_ANDROID
