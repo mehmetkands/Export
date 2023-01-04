@@ -131,7 +131,7 @@ void ADedectedBox::Respawn()
 			GetWorldTimerManager().ClearTimer(FunctionTimer);
 			FActorSpawnParameters TheParam;
 
-			//Spawn Actor Collision Handling Method = Always Spawn.
+		
 			TheParam.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
 
 			//Spawn ball character
@@ -155,10 +155,10 @@ void ADedectedBox::Respawn()
 			//For the new round, returns it false if a strike was made in the previous round.
 			TheGameState->IsStrike = false;
 
-			//For the new round, returns it false if a spare was made in the previous round.
+			
 			TheGameState->IsSemiStrike = false;
 
-			//For the new round, returns it false if a fail was made in the previous round.
+			
 			TheGameState->IsEpicFail = false;
 
 			//Deletes the score of pins fell in the previous round in the second round.
@@ -177,7 +177,7 @@ void ADedectedBox::Respawn()
 
 			if (StartSound != NULL)
 			{
-				//Play Spawn SFX
+			
 				UGameplayStatics::PlaySoundAtLocation(this, StartSound, GetActorLocation());
 			}
 	}
